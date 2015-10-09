@@ -1,0 +1,36 @@
+//generic vars
+$shiro: blue;
+
+//component vars
+$sui-btn-color: transparent !default;
+$sui-btn-primary: $shiro;
+
+
+.sui-Btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 0;
+  color: #000;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Arial;
+  padding: 0;
+  background-color: $sui-btn-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: red;
+  }
+
+  &.is-disabled,
+  &[disabled] {
+    background-color: grey;
+    color: white;
+  }
+
+  &--big {
+    font-size: 22px;
+  }
+
+
+}
