@@ -1,36 +1,78 @@
-//generic vars
-$shiro: blue;
-
-//component vars
-$sui-btn-color: transparent !default;
-$sui-btn-primary: $shiro;
-
+@import 'vars'; // boilerplate 
 
 .sui-Btn {
   display: inline-block;
   text-decoration: none;
-  border: 0;
-  color: #000;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: Arial;
-  padding: 0;
-  background-color: $sui-btn-color;
+  text-align: center;
+  border-width: $border-width;
+  border-color: $border-color;
+  border-style: $border-style;
+  font-size: $small-font-size;
+  font-weight: normal;
+  height: $height;
+  line-height: $line-height;
+  font-family: $font-family;
+  color: $color-default;
+  padding-top: $padding-reset;
+  padding-right: $padding-base;
+  padding-bottom: $padding-reset;
+  padding-left: $padding-base;
+  background-color: $bg-color;
   cursor: pointer;
+  width: auto;
+  overflow: visible; // fix horizontal space in tag button, ie
+  -webkit-appearance: none;
+	vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 0;
+  white-space: nowrap;
 
   &:hover {
-    background-color: red;
+    transition: all 0.3s ease-in-out 0s;
+    background-color: $bg-color-hover;
   }
 
   &.is-disabled,
   &[disabled] {
-    background-color: grey;
-    color: white;
+    background-color: $bg-color-disabled;
+    color: $color-disabled;
+    cursor: default;
+
+    &:hover {
+      background-color: $bg-color-disabled;
+    }
+
   }
 
-  &--big {
-    font-size: 22px;
+  &--large {
+    font-size: $large-font-size;
+    height: $height-large;
+    line-height: $line-height-large;
+    padding-top: $padding-reset;
+    padding-right: $padding-large;
+    padding-bottom: $padding-reset;
+    padding-left: $padding-large;
   }
 
+  &--primary {
+    color: $color-primary;
+    background-color: $bg-color-primary;
+
+    &:hover {
+      background-color: $bg-color-primary-hover;
+    }
+
+  }
+
+  &--alert {
+    color: $color-alert;
+    background-color: $bg-color-alert;
+
+    &:hover {
+      background-color: $bg-color-alert-hover;
+
+    }
+
+  }
 
 }
