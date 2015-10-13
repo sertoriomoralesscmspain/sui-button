@@ -12,6 +12,9 @@
       "pit": true,
       "__DEV__": true
     },
+    "plugins": [
+      "react"
+    ],
     "ecmaFeatures": {
       "arrowFunctions": true,
       "blockBindings": true,
@@ -92,6 +95,19 @@
       "use-isnan": 2,
       "valid-typeof": 1,
       "wrap-iife": 2,
-      "wrap-regex": 0
+      "wrap-regex": 0,
+
+      "react/display-name": 0,
+      "react/jsx-quotes": [2, "single", "avoid-escape"],
+      "react/jsx-no-undef": 1,
+      "react/jsx-uses-react": 1,
+      "react/jsx-uses-vars": 1,
+      "react/no-did-mount-set-state": 0,
+      "react/no-did-update-set-state": 0,
+      "react/no-multi-comp": 2,
+      "react/prop-types": 2,
+      "react/react-in-jsx-scope": 1,
+      "react/self-closing-comp": 2,
+      "react/wrap-multilines": 2
     }
 }
