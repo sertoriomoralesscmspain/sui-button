@@ -1,0 +1,19 @@
+@import 'theming-mixin';
+
+.themeByStylsheets {
+  color: red;
+
+  &--modifier {
+    color: blue;
+  }
+}
+
+.themeByMixin {
+  color: red;
+
+  &--modifier {
+    color: blue;
+  }
+
+  @include themeByMixin--extend;
+}

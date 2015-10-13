@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="theming.css">
+
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Theming test</h1>
+  <p class="themeByStylsheets">Theming by stylesheets (suposed to be lime)</p>
+  <p class="themeByStylsheets themeByStylsheets--modifier">Theming by stylesheets modifier (suposed to be blue)</p>
+  <hr>
+  <p class="themeByMixin">Theming by mixing  (suposed to be lime)</p>
+  <p class="themeByMixin themeByMixin--modifier">Theming by mixing modifier (suposed to be blue)</p>
+</body>
+</html>

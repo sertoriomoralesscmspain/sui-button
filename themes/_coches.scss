@@ -1,0 +1,23 @@
+$sui-btn-background: #e74c3d;
+$sui-btn-color: #fff;
+
+$sui-btn-font-family: 'Coches', Verdana, sans-serif;
+
+$sui-btn-padding-horizontal: 3.5rem;
+
+
+@mixin sui-Btn-extend {
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+  }
+
+  &.is-disabled,
+  &[disabled] {
+  }
+
+  &--big {
+  }
+}

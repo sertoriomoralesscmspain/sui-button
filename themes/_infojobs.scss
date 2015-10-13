@@ -1,0 +1,18 @@
+$sui-btn-background: #2088c2;
+
+$sui-btn-font-size: 14px;
+
+$sui-btn-height: 2rem;
+$sui-btn-padding-horizontal: .75rem;
+
+@mixin sui-Btn-extend {
+  &:hover {
+  }
+
+  &.is-disabled,
+  &[disabled] {
+  }
+
+  &--big {
+  }
+}

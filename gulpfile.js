@@ -10,6 +10,7 @@
 
       sass = require('gulp-sass'),
       scsslint = require('gulp-scss-lint'),
+      csso = require('gulp-csso'),
       postcss = require('gulp-postcss'),
       autoprefixer = require('autoprefixer'),
       sourcemaps = require('gulp-sourcemaps'),
@@ -69,6 +70,7 @@
       }))
       .pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(csso())
         .pipe(postcss([
           autoprefixer({
             browsers: ['> 1%', 'last 2 version', 'IE 8']

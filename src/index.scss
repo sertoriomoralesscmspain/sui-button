@@ -1,30 +1,47 @@
+@import '../themes/infojobs';
+
 //generic vars
-$shiro: blue;
+$shiro: #0000ff;
 
 //component vars
-$sui-btn-color: transparent !default;
-$sui-btn-primary: $shiro;
+$sui-btn-background: #999999 !default;
+$sui-btn-color: #ffffff !default;
+$sui-btn-border-color: transparent !default;
 
+$sui-btn-font-family: 'Arial', 'Helvetica', sans-serif !default;
+$sui-btn-font-size: 1rem !default;
+
+$sui-btn-height: 2.5rem !default;
+$sui-btn-padding-vertical: .5rem !default;
+$sui-btn-padding-horizontal: 1rem !default;
 
 .sui-Btn {
-  display: inline-block;
-  text-decoration: none;
-  border: 0;
-  color: #000;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: Arial;
-  padding: 0;
-  background-color: $sui-btn-color;
+  background-color: $sui-btn-background;
+  border-style: solid;
+  border-color: $sui-btn-border-color;
+  border-width: 1px;
+  color: $sui-btn-color;
   cursor: pointer;
+  display: inline-block;
+  font-family: $sui-btn-font-family;
+  font-size: $sui-btn-font-size;
+  line-height: $sui-btn-height - ($sui-btn-padding-vertical * 2);
+  position: relative;
+  padding-top: $sui-btn-padding-vertical;
+  padding-bottom: $sui-btn-padding-vertical;
+  padding-left: $sui-btn-padding-horizontal;
+  padding-right: $sui-btn-padding-horizontal;
+  text-decoration: none;
+  white-space: nowrap;
+  height: $sui-btn-height;
 
   &:hover {
-    background-color: red;
+    background-color: #ff0000;
   }
 
   &.is-disabled,
   &[disabled] {
-    background-color: grey;
+    background-color: #808080;
     color: white;
   }
 
@@ -32,5 +49,7 @@ $sui-btn-primary: $shiro;
     font-size: 22px;
   }
 
-
+  @include sui-Btn-extend;
 }
+
+
