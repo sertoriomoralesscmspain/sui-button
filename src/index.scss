@@ -1,23 +1,23 @@
-@import 'vars'; // boilerplate 
+@import 'vars'; // boilerplate
 
 .sui-Btn {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  border-width: $border-width;
-  border-color: $border-color;
-  border-style: $border-style;
-  font-size: $small-font-size;
+  border-width: $sui-btn-border-width;
+  border-color: $sui-btn-border-color;
+  border-style: $sui-btn-border-style;
+  font-size: $sui-btn-small-font-size;
   font-weight: normal;
-  height: $height;
-  line-height: $line-height;
-  font-family: $font-family;
-  color: $color-default;
-  padding-top: $padding-reset;
-  padding-right: $padding-base;
-  padding-bottom: $padding-reset;
-  padding-left: $padding-base;
-  background-color: $bg-color;
+  height: $sui-btn-height;
+  line-height: $sui-btn-line-height;
+  font-family: $sui-btn-font-family;
+  color: $sui-btn-color-default;
+  padding-top: $sui-btn-padding-reset;
+  padding-right: $sui-btn-padding-base;
+  padding-bottom: $sui-btn-padding-reset;
+  padding-left: $sui-btn-padding-base;
+  background-color: $sui-btn-bg-color;
   cursor: pointer;
   width: auto;
   overflow: visible; // fix horizontal space in tag button, ie
@@ -29,47 +29,47 @@
 
   &:hover {
     transition: all 0.3s ease-in-out 0s;
-    background-color: $bg-color-hover;
+    background-color: $sui-btn-bg-color-hover;
   }
 
   &.is-disabled,
   &[disabled] {
-    background-color: $bg-color-disabled;
-    color: $color-disabled;
+    background-color: $sui-btn-bg-color-disabled;
+    color: $sui-btn-color-disabled;
     cursor: default;
 
     &:hover {
-      background-color: $bg-color-disabled;
+      background-color: $sui-btn-bg-color-disabled;
     }
 
   }
 
   &--large {
-    font-size: $large-font-size;
-    height: $height-large;
-    line-height: $line-height-large;
-    padding-top: $padding-reset;
-    padding-right: $padding-large;
-    padding-bottom: $padding-reset;
-    padding-left: $padding-large;
+    font-size: $sui-btn-large-font-size;
+    height: $sui-btn-height-large;
+    line-height: $sui-btn-line-height-large;
+    padding-top: $sui-btn-padding-reset;
+    padding-right: $sui-btn-padding-large;
+    padding-bottom: $sui-btn-padding-reset;
+    padding-left: $sui-btn-padding-large;
   }
 
   &--primary {
-    color: $color-primary;
-    background-color: $bg-color-primary;
+    color: $sui-btn-color-primary;
+    background-color: $sui-btn-bg-color-primary;
 
     &:hover {
-      background-color: $bg-color-primary-hover;
+      background-color: $sui-btn-bg-color-primary-hover;
     }
 
   }
 
   &--alert {
-    color: $color-alert;
-    background-color: $bg-color-alert;
+    color: $sui-btn-color-alert;
+    background-color: $sui-btn-bg-color-alert;
 
     &:hover {
-      background-color: $bg-color-alert-hover;
+      background-color: $sui-btn-bg-color-alert-hover;
 
     }
 
