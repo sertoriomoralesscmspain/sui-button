@@ -1,20 +1,34 @@
-@import '../themes/infojobs';
+@import '../themes/sui';
 
-//generic vars
-$shiro: #0000ff;
+// VARIABLES
+// ----------------------------------------------------------------------------
+  $sui-btn-background: #333333 !default;
+  $sui-btn-background--hover: #666666 !default;
+  $sui-btn-color: #ffffff !default;
+  $sui-btn-border-color: transparent !default;
 
-//component vars
-$sui-btn-background: #999999 !default;
-$sui-btn-color: #ffffff !default;
-$sui-btn-border-color: transparent !default;
+  $sui-btn-font-family: 'Arial', 'Helvetica', sans-serif !default;
+  $sui-btn-font-size: 1rem !default;
 
-$sui-btn-font-family: 'Arial', 'Helvetica', sans-serif !default;
-$sui-btn-font-size: 1rem !default;
+  $sui-btn-height: 2.5rem !default;
+  $sui-btn-padding-vertical: .5rem !default;
+  $sui-btn-padding-horizontal: 1rem !default;
 
-$sui-btn-height: 2.5rem !default;
-$sui-btn-padding-vertical: .5rem !default;
-$sui-btn-padding-horizontal: 1rem !default;
+  // Disabled
+  $sui-btn-background--disabled: #cccccc !default;
 
+  // Small
+  $sui-btn-font-size--small: .75rem !default;
+  $sui-btn-height--small: 2rem !default;
+  $sui-btn-padding-horizontal--small: .75rem !default;
+
+  // Big
+  $sui-btn-font-size--big: 1.25rem !default;
+  $sui-btn-height--big: 3.5rem !default;
+
+
+// COMPONENT
+// ----------------------------------------------------------------------------
 .sui-Btn {
   background-color: $sui-btn-background;
   border-style: solid;
@@ -36,17 +50,27 @@ $sui-btn-padding-horizontal: 1rem !default;
   height: $sui-btn-height;
 
   &:hover {
-    background-color: #ff0000;
+    background-color: $sui-btn-background--hover;
   }
 
   &.is-disabled,
   &[disabled] {
-    background-color: #808080;
-    color: white;
+    background-color: $sui-btn-background--disabled;
+    cursor: default;
+  }
+
+  &--small {
+    font-size: $sui-btn-font-size--small;
+    line-height: $sui-btn-height--small - ($sui-btn-padding-vertical * 2);
+    padding-left: $sui-btn-padding-horizontal--small;
+    padding-right: $sui-btn-padding-horizontal--small;
+    height: $sui-btn-height--small;
   }
 
   &--big {
-    font-size: 22px;
+    font-size: $sui-btn-font-size--big;
+    line-height: $sui-btn-height--big - ($sui-btn-padding-vertical * 2);
+    height: $sui-btn-height--big;
   }
 
   @include sui-Btn-extend;
