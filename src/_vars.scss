@@ -1,42 +1,42 @@
 @import 'theme-sui';
 
 // btn font family
-$sui-btn-font-family: $ff-sans-serif;
+$sui-btn-font-family: $ff-sans-serif !default;
 
 //btn size
-$sui-btn-font-size: $small-font-size;
-$sui-btn-medium-font-size: $medium-font-size;
-$sui-btn-large-font-size: $large-font-size;
-$sui-btn-height: $btn-height;
-$sui-btn-medium-height: $btn-medium-height;
-$sui-btn-large-height: $btn-large-height;
-$sui-btn-line-height: $btn-line-height;
-$sui-btn-medium-line-height: $btn-medium-line-height;
-$sui-btn-large-line-height: $btn-large-line-height;
-$sui-btn-padding-right: $p-base;
-$sui-btn-padding-left: $p-base;
-$sui-btn-medium-padding-right: $p-medium;
-$sui-btn-medium-padding-left: $p-medium;
-$sui-btn-large-padding-right: $p-large;
-$sui-btn-large-padding-left: $p-large;
+$sui-btn-font-size: $small-font-size !default;
+$sui-btn-medium-font-size: $medium-font-size !default;
+$sui-btn-large-font-size: $large-font-size !default;
+$sui-btn-height: $btn-height !default;
+$sui-btn-medium-height: $btn-medium-height !default;
+$sui-btn-large-height: $btn-large-height !default;
+$sui-btn-line-height: $btn-line-height !default;
+$sui-btn-medium-line-height: $btn-medium-line-height !default;
+$sui-btn-large-line-height: $btn-large-line-height !default;
+$sui-btn-padding-right: $p-base !default;
+$sui-btn-padding-left: $p-base !default;
+$sui-btn-medium-padding-right: $p-medium !default;
+$sui-btn-medium-padding-left: $p-medium !default;
+$sui-btn-large-padding-right: $p-large !default;
+$sui-btn-large-padding-left: $p-large !default;
 
 // btn color
-$sui-btn-color: $c-gray-dark;
-$sui-btn-color-disabled: $c-gray-light;
-$sui-btn-color-primary: $c-bg-light;
-$sui-btn-color-alert: $c-bg-light;
+$sui-btn-color: $c-text !default;
+$sui-btn-color-primary: $c-contrast !default;
+$sui-btn-color-disabled: $c-text-soft !default;
+$sui-btn-color-alert: $c-contrast !default;
 
 // btn border
-$sui-btn-border-color: $c-bg-transparent;
-$sui-btn-border-radius: $b-radius-base;
+$sui-btn-border-color: $c-border-base !default;
+$sui-btn-border-radius: $b-radius-base !default;
 
 // btn background color
-$sui-btn-bg-color: $c-gray-lighter;
-$sui-btn-bg-color-primary: $c-gray-dark;
-$sui-btn-bg-color-disabled: $c-gray-extralighter;
-$sui-btn-bg-color-alert: $c-danger;
+$sui-btn-bg-color: $c-base !default;
+$sui-btn-bg-color-primary: $c-primary !default;
+$sui-btn-bg-color-disabled: $c-soft !default;
+$sui-btn-bg-color-alert: $c-alert !default;
 
 // btn background hover color
-$sui-btn-bg-color-hover: $c-gray-light;
-$sui-btn-bg-color-primary-hover: $c-bg-dark;
-$sui-btn-bg-color-alert-hover: darken($c-danger,10%);
+$sui-btn-bg-color-hover: $c-base-variant !default;
+$sui-btn-bg-color-primary-hover: $c-primary-variant !default;
+$sui-btn-bg-color-alert-hover: $c-alert-variant !default;
