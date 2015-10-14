@@ -29,6 +29,8 @@ $c-bg-light:              #ffffff !default;
 $c-bg-dark:               #000000 !default;
 $c-bg-transparent:        transparent !default;
 
+$c-alert: $c-bg-light;
+
 // Shades of gray
 $c-gray-darker:           lighten($c-bg-dark, 13.5%) !default; // #222
 $c-gray-dark:             lighten($c-bg-dark, 20%) !default;   // #333
@@ -36,11 +38,21 @@ $c-gray-light:            lighten($c-bg-dark, 46.7%) !default; // #777
 $c-gray-lighter:          lighten($c-bg-dark, 60%) !default; // #999
 $c-gray-extralighter:     lighten($c-bg-dark, 80%) !default; // #ccc
 
-
 // ### Semantic colors
 $c-danger:                #e43731 !default; // Color for negative messages/icons
 
 
+$c-text: $c-gray-dark;
+$c-contrast: $c-bg-light;
+$c-text-soft: $c-gray-light;
+$c-border-base: $c-bg-transparent;
+$c-base: $c-gray-lighter;
+$c-primary: $c-gray-dark;
+$c-soft: $c-gray-extralighter;
+$c-alert: $c-danger;
+$c-base-variant: $c-gray-light;
+$c-primary-variant: $c-bg-dark;
+$c-alert-variant: darken($c-danger,20%);
 
 // ## Typography
 //
