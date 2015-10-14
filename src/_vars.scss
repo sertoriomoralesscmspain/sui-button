@@ -1,29 +1,42 @@
-@import 'sui-base';
+@import 'theme-sui';
 
-$border-small: 1px;
+// btn font family
+$sui-btn-font-family: $ff-sans-serif;
 
-$sui-btn-small-font-size: $small-font-size;
+//btn size
+$sui-btn-font-size: $small-font-size;
+$sui-btn-medium-font-size: $medium-font-size;
 $sui-btn-large-font-size: $large-font-size;
-$sui-btn-color-default: $c-gray-dark;
-$sui-btn-color-disabled: $c-bg-light;
+$sui-btn-height: $btn-height;
+$sui-btn-medium-height: $btn-medium-height;
+$sui-btn-large-height: $btn-large-height;
+$sui-btn-line-height: $btn-line-height;
+$sui-btn-medium-line-height: $btn-medium-line-height;
+$sui-btn-large-line-height: $btn-large-line-height;
+$sui-btn-padding-right: $p-base;
+$sui-btn-padding-left: $p-base;
+$sui-btn-medium-padding-right: $p-medium;
+$sui-btn-medium-padding-left: $p-medium;
+$sui-btn-large-padding-right: $p-large;
+$sui-btn-large-padding-left: $p-large;
+
+// btn color
+$sui-btn-color: $c-gray-dark;
+$sui-btn-color-disabled: $c-gray-light;
 $sui-btn-color-primary: $c-bg-light;
 $sui-btn-color-alert: $c-bg-light;
-$sui-btn-border-width: $border-small;
+
+// btn border
 $sui-btn-border-color: $c-bg-transparent;
-$sui-btn-border-style: solid;
+$sui-btn-border-radius: $b-radius-base;
+
+// btn background color
 $sui-btn-bg-color: $c-gray-lighter;
 $sui-btn-bg-color-primary: $c-gray-dark;
 $sui-btn-bg-color-disabled: $c-gray-extralighter;
 $sui-btn-bg-color-alert: $c-danger;
+
+// btn background hover color
 $sui-btn-bg-color-hover: $c-gray-light;
 $sui-btn-bg-color-primary-hover: $c-bg-dark;
-$sui-btn-bg-color-alert-hover: darken(#bf2102,10%);
-$sui-btn-height: 30px;
-$sui-btn-height-large: 42px;
-$sui-btn-line-height: 28px;
-$sui-btn-line-height-large: 40px;
-$sui-btn-padding-reset: 0;
-$sui-btn-padding-base: 10px;
-$sui-btn-padding-reset: 0;
-$sui-btn-padding-large: 20px;
-$sui-btn-font-family: Arial;
+$sui-btn-bg-color-alert-hover: darken($c-danger,10%);

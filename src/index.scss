@@ -1,22 +1,29 @@
-@import 'vars'; // boilerplate
+@import 'vars';
+
+/*------------------------------------*\
+    $sui-Btn
+\*------------------------------------*/
+/**
+ * Component's vars must be prefixed with sui- and also import global vars defined in src/_vars.scss
+ */
 
 .sui-Btn {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  border-width: $sui-btn-border-width;
+  border-width: 1px;
   border-color: $sui-btn-border-color;
-  border-style: $sui-btn-border-style;
-  font-size: $sui-btn-small-font-size;
+  border-style: solid;
+  font-size: $sui-btn-font-size;
   font-weight: normal;
   height: $sui-btn-height;
   line-height: $sui-btn-line-height;
   font-family: $sui-btn-font-family;
-  color: $sui-btn-color-default;
-  padding-top: $sui-btn-padding-reset;
-  padding-right: $sui-btn-padding-base;
-  padding-bottom: $sui-btn-padding-reset;
-  padding-left: $sui-btn-padding-base;
+  color: $sui-btn-color;
+  padding-top: 0;
+  padding-right: $sui-btn-padding-right;
+  padding-bottom: 0;
+  padding-left: $sui-btn-padding-left;
   background-color: $sui-btn-bg-color;
   cursor: pointer;
   width: auto;
@@ -24,7 +31,7 @@
   -webkit-appearance: none;
 	vertical-align: middle;
   box-sizing: border-box;
-  border-radius: 0;
+  border-radius: $sui-btn-border-radius;
   white-space: nowrap;
 
   &:hover {
@@ -41,17 +48,22 @@
     &:hover {
       background-color: $sui-btn-bg-color-disabled;
     }
+  }
 
+  &--medium {
+    font-size: $sui-btn-medium-font-size;
+    height: $sui-btn-medium-height;
+    line-height: $sui-btn-medium-line-height;
+    padding-right: $sui-btn-medium-padding-right;
+    padding-left: $sui-btn-medium-padding-left;
   }
 
   &--large {
     font-size: $sui-btn-large-font-size;
-    height: $sui-btn-height-large;
-    line-height: $sui-btn-line-height-large;
-    padding-top: $sui-btn-padding-reset;
-    padding-right: $sui-btn-padding-large;
-    padding-bottom: $sui-btn-padding-reset;
-    padding-left: $sui-btn-padding-large;
+    height: $sui-btn-large-height;
+    line-height: $sui-btn-large-line-height;
+    padding-right: $sui-btn-large-padding-right;
+    padding-left: $sui-btn-large-padding-left;
   }
 
   &--primary {
@@ -61,7 +73,6 @@
     &:hover {
       background-color: $sui-btn-bg-color-primary-hover;
     }
-
   }
 
   &--alert {
@@ -70,9 +81,6 @@
 
     &:hover {
       background-color: $sui-btn-bg-color-alert-hover;
-
     }
-
   }
-
 }
